@@ -24,11 +24,16 @@
 
             <b-collapse is-nav id="nav_text_collapse">
                 <b-navbar-nav class="ml-auto">
+                    @guest
+                    <b-nav-item href="{{ route('login') }}">Ingresar</b-nav-item>
+                    <b-nav-item href="{{ route('register') }}">Registro</b-nav-item>
+                    @else
 
                         <!-- Navbar dropdowns -->
                           <b-nav-item-dropdown text="Username" right>
                             <b-dropdown-item href="#">Cerrar Sesion</b-dropdown-item>
                           </b-nav-item-dropdown>
+                    @endguest
                     
                     </b-navbar-nav>
             </b-collapse>
