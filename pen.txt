@@ -1,0 +1,5 @@
+                    @guest
+                    <b-nav-item href="{{ route('login') }}">Ingresar</b-nav-item>
+                    <b-nav-item href="{{ route('register') }}">Registro</b-nav-item>
+                    @else
+                      @endguest
