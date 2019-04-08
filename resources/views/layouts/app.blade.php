@@ -7,21 +7,20 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     
 </head class="h-100">
 <body>
-     <form id="logout-form" action="{{ route('logout') }}" method="POST" style=display: none;">
+     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}
     </form>
     <div id="app" class="h-100">
         <b-navbar type="dark" variant="primary">
             <b-navbar-toggle target="nav_text_collapse"></b-navbar-toggle>
 
-            <b-navbar-brand href="{{ url('/') }}">
+            <b-navbar-brand href="{{ url('/home') }}">
                 {{ config('app.name', 'Laravel') }}
             </b-navbar-brand>
 

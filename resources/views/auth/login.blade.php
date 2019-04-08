@@ -44,8 +44,7 @@
                         </b-form-group>
 
                         <b-form-group>
-                            <b-form-checkbox name="remember"
-                            {{ old('remember') ? 'checked="true"' : '' }}>
+                            <b-form-checkbox name="remember" {{ old('remember') ? 'checked="true"' : '' }}>
 
                                 Recordar Sesion
 
